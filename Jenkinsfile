@@ -4,7 +4,5 @@ library identifier: 'jenkinsSharedFT@main', retriever: modernSCM([$class: 'GitSC
 	remote: 'https://github.com/amarlanda/jenkinsSharedFT.git',
 	credentialsId: GHEAccess])
 
-
-
 evenOrOdd(currentBuild.getNumber())
 

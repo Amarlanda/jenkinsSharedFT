@@ -23,9 +23,11 @@ def call(int buildNumber) {
                 } 
             }
           }
-        steps{
-          container('terraform'){
-            sh 'terraform plan'
+        stage('image test') {
+          steps{
+            container('terraform'){
+              sh 'terraform plan'
+            }
           }
         }
 
