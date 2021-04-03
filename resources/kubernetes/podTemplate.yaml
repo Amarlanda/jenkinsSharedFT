@@ -22,7 +22,7 @@ spec:
       securityContext:
         runAsUser: 0
       command:
-        - freqtrade trade --strategy SampleStrategy
+        - sh 'echo hello'
       tty: true
       resources:
         requests:
