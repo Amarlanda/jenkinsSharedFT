@@ -1,7 +1,7 @@
 String GHEAccess = 'jenkinsPAT'
 
-library identifier: 'jenkins-sharedlib-my@main', retriever: modernSCM([$class: 'GitSCMSource',
-	remote: 'https://github.com/amarlanda/jenkins-sharedlib.git',
+library identifier: 'jenkinsSharedFT@main', retriever: modernSCM([$class: 'GitSCMSource',
+	remote: 'https://github.com/amarlanda/jenkinsSharedFT.git',
 	credentialsId: GHEAccess])
 
 
