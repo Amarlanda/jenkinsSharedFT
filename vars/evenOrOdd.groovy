@@ -27,7 +27,7 @@ def call(int buildNumber) {
         stage('image test') {
           steps{
             container('freqtrade'){
-              sh 'terraform plan'
+              sh 'hostname'
             }
           }
         }
