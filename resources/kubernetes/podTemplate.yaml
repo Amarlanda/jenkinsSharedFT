@@ -17,13 +17,12 @@ spec:
         limits:
           memory: "1000Mi"
           cpu: "1000m"
-    - name: freqtrade
-      image: freqtradeorg/freqtrade:stable
+    - name: terraform
+      image: hashicorp/terraform:latest
       securityContext:
         runAsUser: 0
       command:
         - cat
-        - hostname
       tty: true
       resources:
         requests:

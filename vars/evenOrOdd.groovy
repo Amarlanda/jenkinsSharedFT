@@ -1,3 +1,4 @@
+  
 // vars/my.groovy
 def call(int buildNumber) {
 
@@ -24,15 +25,6 @@ def call(int buildNumber) {
             }
           }
         }
-        stage('image test') {
-          steps{
-            container('freqtrade'){
-              sh 'hostname'
-            }
-          }
-        }
-
-        }
       }
-
     }
+}
