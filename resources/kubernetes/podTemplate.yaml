@@ -22,7 +22,7 @@ spec:
       securityContext:
         runAsUser: 0
       command:
-        - hostname
+        - cat
       tty: true
       resources:
         requests:
