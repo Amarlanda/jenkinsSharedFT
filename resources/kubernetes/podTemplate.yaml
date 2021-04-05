@@ -23,7 +23,6 @@ spec:
         runAsUser: 0
       command:
         - cat
-        - hostname
       tty: true
       resources:
         requests:
