@@ -16,6 +16,12 @@ def call(int buildNumber) {
       stages {
         stage('Even Stage') {
           steps {
+            container('terraform'){
+              sh ' terraform init'
+              sh 'hostname'
+            }
+
+            /*         
             script{ 
                 if (buildNumber % 2 == 0) {
             echo "The build number is even ${VERSION}"
@@ -23,6 +29,7 @@ def call(int buildNumber) {
             echo "The build number is odd ${VERSION}"
                 } 
             }
+          */
           }
         }
       }
