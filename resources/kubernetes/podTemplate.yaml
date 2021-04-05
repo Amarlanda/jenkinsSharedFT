@@ -22,7 +22,7 @@ spec:
       securityContext:
         runAsUser: 0
       command:
-        - pwd
+        - terraform plan
       tty: true
       resources:
         requests:
