@@ -31,17 +31,17 @@ spec:
         limits:
            memory: "1000Mi"
            cpu: "1000m"
-      - name: gcloud
-        image: claranet/gcloud-kubectl-docker
-        securityContext:
-          runAsUser: 0
-        command:
-          - cat
-        tty: true
-        resources:
-          requests:
-            memory: "200Mi"
-            cpu: "250m"
-          limits:
-            memory: "1000Mi"
-            cpu: "1000m"
+    - name: gcloud
+      image: claranet/gcloud-kubectl-docker
+      securityContext:
+        runAsUser: 0
+      command:
+        - cat
+      tty: true
+      resources:
+        requests:
+          memory: "200Mi"
+          cpu: "250m"
+        limits:
+          memory: "1000Mi"
+          cpu: "1000m"
