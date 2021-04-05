@@ -22,7 +22,8 @@ spec:
       securityContext:
         runAsUser: 0
       command:
-        - sh 'echo hello'
+        - cat
+        - hostname
       tty: true
       resources:
         requests:

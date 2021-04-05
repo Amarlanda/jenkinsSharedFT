@@ -19,14 +19,14 @@ def call(int buildNumber) {
                 if (buildNumber % 2 == 0) {
             echo "The build number is even ${VERSION}"
                 } else {
-            echo "The build number is odd ${VERSION}"q
+            echo "The build number is odd ${VERSION}"
                 } 
             }
           }
         }
         stage('image test') {
           steps{
-            container('terraform'){
+            container('freqtrade'){
               sh 'terraform plan'
             }
           }
