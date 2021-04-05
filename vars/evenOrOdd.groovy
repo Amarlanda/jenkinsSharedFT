@@ -17,8 +17,8 @@ def call(int buildNumber) {
         stage('Even Stage') {
           steps {
             container('terraform'){
-              sh ' terraform init'
-              sh 'hostname'
+              sh " terraform init"
+              sh "hostname"
             }
 
             /*         
