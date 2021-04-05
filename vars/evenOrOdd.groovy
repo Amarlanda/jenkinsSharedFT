@@ -16,9 +16,9 @@ def call(int buildNumber) {
       stages {
         stage('Even Stage') {
           steps {
-            container('terraform'){
-              sh " terraform init"
-              sh "hostname"
+            container('gcloud'){
+              sh "gcloud container clusters get-credentials prod-trading-clus01 --region europe-west2 --project avian-mile-300915"
+              sh "kubectl get svc"
             }
 
             /*         
