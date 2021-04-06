@@ -4,7 +4,9 @@ metadata:
   labels:
     jenkins: jenkins-pipeline
 spec:
-  serviceAccountName: sajenkins
+ secret:
+    secretName: jenkins-admin
+  serviceAccountName: sa2jenkins
   containers:
     - name: jnlp
       image: jenkins/inbound-agent:latest
