@@ -6,7 +6,7 @@ metadata:
 spec:
  secret:
     secretName: jenkins-admin
-  serviceAccountName: sa2jenkins
+
   containers:
     - name: jnlp
       image: jenkins/inbound-agent:latest
