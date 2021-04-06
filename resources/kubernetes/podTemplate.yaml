@@ -4,8 +4,10 @@ metadata:
   labels:
     jenkins: jenkins-pipeline
 spec:
- secret:
-    secretName: jenkins-admin
+  volumes:
+  - name: google-cloud-key
+    secret:
+      secretName: jenkins-admin
   containers:
     - name: jnlp
       image: jenkins/inbound-agent:latest
