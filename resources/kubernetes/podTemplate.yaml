@@ -33,6 +33,7 @@ spec:
            cpu: "1000m"
     - name: gcloud
       image: claranet/gcloud-kubectl-docker
+      serviceAccountName: sajenkins
       securityContext:
         runAsUser: 0
       command:
