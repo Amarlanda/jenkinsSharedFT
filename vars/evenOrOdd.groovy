@@ -17,7 +17,7 @@ def call(int buildNumber) {
         stage('Even Stage') {
           steps {
             container('gcloud'){
-              sh "gcloud container clusters get-credentials prod-trading-clus01 --region europe-west2 --project ons002"
+              //sh "gcloud container clusters get-credentials prod-trading-clus01 --region europe-west2 --project ons002"
               sh 'kubectl get svc'
               sh "ls /home/jenkins/agent"
               sh "ls /home/jenkins/"
