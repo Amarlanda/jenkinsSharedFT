@@ -4,7 +4,7 @@ metadata:
   labels:
     jenkins: jenkins-pipeline
 spec:
-  serviceAccountName: jenkins
+  serviceAccountName: sajenkins
   containers:
     - name: jnlp
       image: jenkins/inbound-agent:latest
@@ -32,7 +32,7 @@ spec:
            memory: "1000Mi"
            cpu: "1000m"
     - name: gcloud
-      serviceAccountName: jenkins
+      serviceAccountName: sajenkins
       image: claranet/gcloud-kubectl-docker
       securityContext:
         runAsUser: 0
